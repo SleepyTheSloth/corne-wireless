@@ -58,7 +58,7 @@
                         display-name = "Number";
                         bindings = <
    &kp N1      &kp N2    &kp N3     &kp N4     &kp N5       &kp N6     &kp N7    &kp N8    &kp N9   &kp N0
-   &kp EXCL    &kp AT    &kp HASH   &kp DLLR   &kp PRCNT    &kp CARET  &kp AMPS  &kp ASTRK &kp LBRC &kp RBRC
+   &kp EXCL    &kp AT    &kp HASH   &kp DLLR   &kp PRCNT    &kp CARET  &kp AMPS  &kp ASTRK &kp LPAR &kp RPAR
    &bt BT_CLR  &trans    &trans     &trans     &trans       &trans     &trans    &trans    &trans   &trans 
                          &trans     &trans     &trans       &trans     &kp ESC   &mo 4
                         >;
@@ -66,17 +66,17 @@
 
                 symbol_layer {
 // -----------------------------------------------------------------------------------------
-// | 1! |  2@ |  3# |  4$ |  5% |     |  6^ |  7& |  8* |  9(  |  0)  |
-// | -_ |  =+ |  {  |  [  |  (  |     |  )  |  ]  |  }  |  /?  |  \|  |
-// | `~ |     |     |  ,< |  :  |     |  ;  |  .> | CTRL| META |      |
-//            |FUNCT| ESC |     |     |     |     |     |
+// |    |  `  |  '  |  {  |  [  |/////|  ]  |  }  |  "  |      |      |
+// |    |  ~  |     |     |  (  |     |  )  |     |     |   |  |      |
+// |    |  \  |  <  |  +  |  =  |     |  _  |  -  |  >  |   /  |      |
+//            |FUNCT|     |     |/////|     |     |     |
                         display-name = "Symbol";
                         bindings = <
 
-   &kp N1    &kp N2    &kp N3    &kp N4    &kp N5        &kp N6    &kp N7    &kp N8    &kp N9   &kp N0
-   &kp MINUS &kp EQUAL &kp LBRC  &kp LBKT  &kp LPAR      &kp RPAR  &kp RBKT  &kp RBRC  &kp FSLH &kp BSLH
-   &kp GRAVE &trans    &trans    &kp COMMA &kp COLON     &kp SEMI  &kp DOT   &kp LCTRL &kp RALT &trans
-                       &mo 4     &kp ESC   &trans        &trans    &trans    &trans
+   &trans   &kp GRAVE  &kp SQT  &kp LBRC  &kp LBKT      &kp RBKT   &kp RBRC   &kp DQT  &trans   &trans
+   &trans   &kp TILDE  &trans   &kp LBKT  &kp LPAR      &kp RPAR   &trans     &trans   &kp PIPE &trans
+   &trans   &kp BSLH   &kp LT   &kp PLUS  &kp EQUAL     &kp UNDER  &kp MINUS  &kp GT   &kp FSLH &trans
+                       &mo 4    &trans    &trans        &trans    &trans    &trans
                         >;
                 };
         
