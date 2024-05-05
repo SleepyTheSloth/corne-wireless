@@ -22,15 +22,6 @@
     };
 
     behaviors {
-        as: auto_shift {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            tapping_term_ms = <450>;
-            quick_tap_ms = <0>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
-        };
-
         hm: home_row_mods {
                 compatible = "zmk,behavior-hold-tap";
                 label = "HOME_ROW_MODS";
